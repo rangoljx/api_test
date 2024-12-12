@@ -1,0 +1,10 @@
+pytest
+pytest-html
+requests
+pytest-xdist
+pytest-cov
+pytest-timeout
+pytest-rerunfailures
+pytest-mock
+pytest-parametrize
+allure-pytest
