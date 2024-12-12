@@ -37,7 +37,7 @@ def test_get_endpoints(endpoint):
 # 测试GET请求的响应时间
 @pytest.mark.parametrize("endpoint", [
     "/",  # 首页
-    "/about.html",  # 关于页面
+    "/about/",  # 关于页面
     "/blog/"  # 博客页面
 ])
 def test_get_endpoints_response_time(endpoint):
