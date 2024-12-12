@@ -19,7 +19,7 @@ pipeline {
         stage('Report') {
             steps {
                 allure([
-                    includeProperties: false,
+                    includeProperties: true,
                     jdk: '',
                     results: [[path: 'report']]
                 ])
