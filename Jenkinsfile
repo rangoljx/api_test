@@ -4,15 +4,15 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'python -m venv venv'
-                sh './venv/Scripts/activate'
-                sh 'pip install -r requirements.txt'
+                bat 'python -m venv venv'
+                bat '.\\venv\\Scripts\\activate'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'pytest'
+                bat 'pytest'
             }
         }
 
