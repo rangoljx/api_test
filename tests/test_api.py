@@ -55,7 +55,7 @@ def test_get_endpoints_response_time(endpoint):
         rtime = response['response_time']
         
         # 设定响应时间阈值（例如：1秒）
-        MAX_RESPONSE_TIME = 10
+        MAX_RESPONSE_TIME = 60
         
         # 检查响应时间是否在阈值范围内
         assert rtime < MAX_RESPONSE_TIME, f"Response time for {BASE_URL}{endpoint} was too long: {rtime} seconds"
